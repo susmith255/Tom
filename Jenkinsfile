@@ -5,7 +5,7 @@ pipeline {
       
       stage('Preparation') {
         steps {
-          // Cleanup, Environment setup, etc.
+          echo "susmith"
         }
       }
       
@@ -13,22 +13,22 @@ pipeline {
         parallel {
           stage('Unit Tests') {
             steps {
-              // Invoke unit tests
+              echo "anusha"
             }
           }
           stage('Integration Tests') {
             steps {
-              // Invoke integration tests
+              echo "integration"
             }
           }
           stage('Regression Tests') {
             steps {
-             // Invoke regression tests
+             echo "regression"
             }
           }
           stage('Technical checks') {
             steps {
-              // Invoke Technical checks
+              echo "Technical checks"
             }
           }
         }
